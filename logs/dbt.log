@@ -893,3 +893,128 @@ select * from persons
 [0m21:04:33.291083 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
 [0m21:04:33.291083 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD6B0E6EE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD6B5BCA60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AD6B4EFA30>]}
 [0m21:04:33.291083 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-06-25 21:39:24.631550 | efdcb40a-0f16-491e-b1e0-194e017a2ea3 ==============================
+[0m21:39:24.631550 [info ] [MainThread]: Running with dbt=1.4.6
+[0m21:39:24.631550 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\ws_htu1028\\.dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m21:39:24.631550 [debug] [MainThread]: Tracking: tracking
+[0m21:39:24.640058 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC98D54100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC98D54E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC98D54D00>]}
+[0m21:39:24.640058 [debug] [MainThread]: checksum: 0325e47f1211ebbdb24627f81d8289d705fdb573380364d07ab35982cb3d57cd, vars: {}, profile: None, target: None, version: 1.4.6
+[0m21:39:24.703897 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:39:24.703897 [debug] [MainThread]: Partial parsing: updated file: dbt1://models\test3_model_table_person.sql
+[0m21:39:24.720660 [debug] [MainThread]: 1699: static parser successfully parsed test3_model_table_person.sql
+[0m21:39:24.740220 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt1.example
+[0m21:39:24.740220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'efdcb40a-0f16-491e-b1e0-194e017a2ea3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC98EFB0D0>]}
+[0m21:39:24.740220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'efdcb40a-0f16-491e-b1e0-194e017a2ea3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC98E77A30>]}
+[0m21:39:24.740220 [info ] [MainThread]: Found 3 models, 0 tests, 0 snapshots, 0 analyses, 306 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+[0m21:39:24.740220 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'efdcb40a-0f16-491e-b1e0-194e017a2ea3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC98E6DCA0>]}
+[0m21:39:24.755909 [info ] [MainThread]: 
+[0m21:39:24.755909 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m21:39:24.755909 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT'
+[0m21:39:24.771967 [debug] [ThreadPool]: Using snowflake connection "list_DBT"
+[0m21:39:24.772904 [debug] [ThreadPool]: On list_DBT: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt1", "target_name": "dev", "connection_name": "list_DBT"} */
+show terse schemas in database DBT
+    limit 10000
+[0m21:39:24.772904 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:39:27.107208 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 2 seconds
+[0m21:39:27.107208 [debug] [ThreadPool]: On list_DBT: Close
+[0m21:39:27.345329 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DBT_TEST'
+[0m21:39:27.361186 [debug] [ThreadPool]: Using snowflake connection "list_DBT_TEST"
+[0m21:39:27.361186 [debug] [ThreadPool]: On list_DBT_TEST: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt1", "target_name": "dev", "connection_name": "list_DBT_TEST"} */
+show terse objects in DBT.TEST
+[0m21:39:27.361186 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:39:28.179058 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 1 seconds
+[0m21:39:28.179058 [debug] [ThreadPool]: On list_DBT_TEST: Close
+[0m21:39:28.427228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'efdcb40a-0f16-491e-b1e0-194e017a2ea3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC98D54D00>]}
+[0m21:39:28.427228 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m21:39:28.427228 [info ] [MainThread]: 
+[0m21:39:28.442933 [debug] [Thread-1  ]: Began running node model.dbt1.test1_person
+[0m21:39:28.442933 [info ] [Thread-1  ]: 1 of 3 START sql view model TEST.test1_person .................................. [RUN]
+[0m21:39:28.447916 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.dbt1.test1_person'
+[0m21:39:28.447916 [debug] [Thread-1  ]: Began compiling node model.dbt1.test1_person
+[0m21:39:28.447916 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt1.test1_person"
+[0m21:39:28.447916 [debug] [Thread-1  ]: Timing info for model.dbt1.test1_person (compile): 2023-06-25 21:39:28.447916 => 2023-06-25 21:39:28.447916
+[0m21:39:28.447916 [debug] [Thread-1  ]: Began executing node model.dbt1.test1_person
+[0m21:39:28.466232 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt1.test1_person"
+[0m21:39:28.482960 [debug] [Thread-1  ]: Using snowflake connection "model.dbt1.test1_person"
+[0m21:39:28.484102 [debug] [Thread-1  ]: On model.dbt1.test1_person: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt1", "target_name": "dev", "node_id": "model.dbt1.test1_person"} */
+create or replace   view DBT.TEST.test1_person
+  
+   as (
+    select * from persons
+  );
+[0m21:39:28.484102 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m21:39:29.665368 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m21:39:29.681634 [debug] [Thread-1  ]: Timing info for model.dbt1.test1_person (execute): 2023-06-25 21:39:28.447916 => 2023-06-25 21:39:29.681634
+[0m21:39:29.681634 [debug] [Thread-1  ]: On model.dbt1.test1_person: Close
+[0m21:39:29.928675 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'efdcb40a-0f16-491e-b1e0-194e017a2ea3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC98F54610>]}
+[0m21:39:29.928675 [info ] [Thread-1  ]: 1 of 3 OK created sql view model TEST.test1_person ............................. [[32mSUCCESS 1[0m in 1.48s]
+[0m21:39:29.928675 [debug] [Thread-1  ]: Finished running node model.dbt1.test1_person
+[0m21:39:29.928675 [debug] [Thread-1  ]: Began running node model.dbt1.test2_employee
+[0m21:39:29.928675 [info ] [Thread-1  ]: 2 of 3 START sql view model TEST.test2_employee ................................ [RUN]
+[0m21:39:29.945054 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.dbt1.test2_employee'
+[0m21:39:29.945054 [debug] [Thread-1  ]: Began compiling node model.dbt1.test2_employee
+[0m21:39:29.948567 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt1.test2_employee"
+[0m21:39:29.948567 [debug] [Thread-1  ]: Timing info for model.dbt1.test2_employee (compile): 2023-06-25 21:39:29.945054 => 2023-06-25 21:39:29.948567
+[0m21:39:29.948567 [debug] [Thread-1  ]: Began executing node model.dbt1.test2_employee
+[0m21:39:29.948567 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt1.test2_employee"
+[0m21:39:29.948567 [debug] [Thread-1  ]: Using snowflake connection "model.dbt1.test2_employee"
+[0m21:39:29.948567 [debug] [Thread-1  ]: On model.dbt1.test2_employee: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt1", "target_name": "dev", "node_id": "model.dbt1.test2_employee"} */
+create or replace   view DBT.TEST.test2_employee
+  
+   as (
+    select * from employee
+  );
+[0m21:39:29.948567 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:39:30.799163 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m21:39:30.814969 [debug] [Thread-1  ]: Timing info for model.dbt1.test2_employee (execute): 2023-06-25 21:39:29.948567 => 2023-06-25 21:39:30.814969
+[0m21:39:30.814969 [debug] [Thread-1  ]: On model.dbt1.test2_employee: Close
+[0m21:39:31.045577 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'efdcb40a-0f16-491e-b1e0-194e017a2ea3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC992A0D00>]}
+[0m21:39:31.048202 [info ] [Thread-1  ]: 2 of 3 OK created sql view model TEST.test2_employee ........................... [[32mSUCCESS 1[0m in 1.09s]
+[0m21:39:31.051388 [debug] [Thread-1  ]: Finished running node model.dbt1.test2_employee
+[0m21:39:31.052001 [debug] [Thread-1  ]: Began running node model.dbt1.test3_model_table_person
+[0m21:39:31.052001 [info ] [Thread-1  ]: 3 of 3 START sql view model TEST.test3_model_table_person ...................... [RUN]
+[0m21:39:31.055324 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.dbt1.test3_model_table_person'
+[0m21:39:31.055324 [debug] [Thread-1  ]: Began compiling node model.dbt1.test3_model_table_person
+[0m21:39:31.055324 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt1.test3_model_table_person"
+[0m21:39:31.055324 [debug] [Thread-1  ]: Timing info for model.dbt1.test3_model_table_person (compile): 2023-06-25 21:39:31.055324 => 2023-06-25 21:39:31.055324
+[0m21:39:31.055324 [debug] [Thread-1  ]: Began executing node model.dbt1.test3_model_table_person
+[0m21:39:31.055324 [debug] [Thread-1  ]: Dropping relation "DBT"."TEST"."TEST3_MODEL_TABLE_PERSON" because it is of type table
+[0m21:39:31.072505 [debug] [Thread-1  ]: Using snowflake connection "model.dbt1.test3_model_table_person"
+[0m21:39:31.072505 [debug] [Thread-1  ]: On model.dbt1.test3_model_table_person: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt1", "target_name": "dev", "node_id": "model.dbt1.test3_model_table_person"} */
+drop table if exists "DBT"."TEST"."TEST3_MODEL_TABLE_PERSON" cascade
+[0m21:39:31.072505 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m21:39:31.683127 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1 seconds
+[0m21:39:31.698776 [debug] [Thread-1  ]: Writing runtime sql for node "model.dbt1.test3_model_table_person"
+[0m21:39:31.698776 [debug] [Thread-1  ]: Using snowflake connection "model.dbt1.test3_model_table_person"
+[0m21:39:31.698776 [debug] [Thread-1  ]: On model.dbt1.test3_model_table_person: /* {"app": "dbt", "dbt_version": "1.4.6", "profile_name": "dbt1", "target_name": "dev", "node_id": "model.dbt1.test3_model_table_person"} */
+create or replace   view DBT.TEST.test3_model_table_person
+  
+   as (
+    
+
+select * from persons
+  );
+[0m21:39:31.914661 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0 seconds
+[0m21:39:31.914661 [debug] [Thread-1  ]: Timing info for model.dbt1.test3_model_table_person (execute): 2023-06-25 21:39:31.055324 => 2023-06-25 21:39:31.914661
+[0m21:39:31.914661 [debug] [Thread-1  ]: On model.dbt1.test3_model_table_person: Close
+[0m21:39:32.167830 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'efdcb40a-0f16-491e-b1e0-194e017a2ea3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC98D67100>]}
+[0m21:39:32.167830 [info ] [Thread-1  ]: 3 of 3 OK created sql view model TEST.test3_model_table_person ................. [[32mSUCCESS 1[0m in 1.12s]
+[0m21:39:32.167830 [debug] [Thread-1  ]: Finished running node model.dbt1.test3_model_table_person
+[0m21:39:32.167830 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m21:39:32.167830 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:39:32.167830 [debug] [MainThread]: Connection 'list_DBT' was properly closed.
+[0m21:39:32.167830 [debug] [MainThread]: Connection 'list_DBT_TEST' was properly closed.
+[0m21:39:32.167830 [debug] [MainThread]: Connection 'model.dbt1.test3_model_table_person' was properly closed.
+[0m21:39:32.167830 [info ] [MainThread]: 
+[0m21:39:32.183494 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 7.41 seconds (7.41s).
+[0m21:39:32.183494 [debug] [MainThread]: Command end result
+[0m21:39:32.183494 [info ] [MainThread]: 
+[0m21:39:32.183494 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:39:32.183494 [info ] [MainThread]: 
+[0m21:39:32.183494 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m21:39:32.183494 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC98E77F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC99280A30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CC99280C40>]}
+[0m21:39:32.183494 [debug] [MainThread]: Flushing usage events
