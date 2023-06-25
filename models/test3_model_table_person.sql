@@ -3,5 +3,4 @@
         materialized="table"
     )
 }}
-
 select * from persons
