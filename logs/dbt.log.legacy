@@ -1,0 +1,2 @@
+2023-06-25 14:52:20.883829 (MainThread): You have an incompatible version of 'pyarrow' installed (3.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+2023-06-25 14:54:35.131112 (MainThread): You have an incompatible version of 'pyarrow' installed (3.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
