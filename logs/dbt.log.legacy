@@ -8,3 +8,6 @@
 2023-06-25 21:04:24.846993 (MainThread): You have an incompatible version of 'pyarrow' installed (3.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
 2023-06-25 21:39:24.092408 (MainThread): You have an incompatible version of 'pyarrow' installed (3.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
 2023-06-25 22:00:56.187327 (MainThread): You have an incompatible version of 'pyarrow' installed (3.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+2023-06-26 07:44:07.601873 (MainThread): You have an incompatible version of 'pyarrow' installed (3.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+2023-06-26 07:45:24.045939 (MainThread): You have an incompatible version of 'pyarrow' installed (3.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
+2023-06-26 07:50:56.979040 (MainThread): You have an incompatible version of 'pyarrow' installed (3.0.0), please install a version that adheres to: 'pyarrow<10.1.0,>=10.0.1; extra == "pandas"'
