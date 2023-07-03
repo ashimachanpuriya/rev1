@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: test1_person
+    columns:
+      - name: PersonID
+        tests:
+          - unique
+          - relationships:  
+              to: ref('test2_employee')  
+              field: EMPID
+
+  - name: test2_employee
+    columns:
+      - name: EMPID
+        tests:
+          - unique:
+              severity: warn
+              warn_if: ">1"
+
+
+
+
